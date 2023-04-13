@@ -10,4 +10,7 @@
 
     # Create docker image from Dockerfile 
     docker build -f Dockerfile -t {name of image} .
+    
+    # Create postgres container
+    docker run -d -p 5432:5432 --name {container name} -e POSTGRES_PASSWORD=test -e POSTGRES_USER=test -e POSTGRES_DB={database name} postgres"
 ```
