@@ -1,8 +1,6 @@
 
 ## Docker Reference
 
-#### Set up redis on localhost:6379
-
 ```bash
     # Create network of type bridge with name redis_network
     docker network create -d bridge redis_network
