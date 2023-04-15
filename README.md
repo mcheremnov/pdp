@@ -12,8 +12,11 @@
     docker build -f Dockerfile -t {name of image} .
     
     # Create postgres container
-    docker run -d -p 5432:5432 --name {container name} -e POSTGRES_PASSWORD=test -e POSTGRES_USER=test -e POSTGRES_DB={database name} postgres"
+    docker run -d -p 5432:5432 --name {container name} -e POSTGRES_PASSWORD=test -e POSTGRES_USER=test -e POSTGRES_DB={database name} postgres
 
     # Access mysql server from docker container
+    
     docker exec -it mysql mysql -uroot -p
+
+
 ```
